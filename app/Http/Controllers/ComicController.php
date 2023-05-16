@@ -50,7 +50,10 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        //
+
+        $data = config('data');
+
+        return view('comics/show', compact('comic', 'data'));
     }
 
     /**
