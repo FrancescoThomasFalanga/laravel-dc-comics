@@ -1,6 +1,12 @@
 @extends('layouts/mainLayout')
 
 @section('content')
+
+    <div class="create text-center">
+
+        <a href="{{route('comics.index')}}">Go Back</a>
+
+    </div>
     
     <form class="form" action="{{route('comics.store')}}" method="POST">
         @csrf

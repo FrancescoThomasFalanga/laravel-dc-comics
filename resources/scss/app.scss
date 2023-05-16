@@ -175,6 +175,8 @@ div.bg-grey {
                 img {
                     width: 100%;
                     height: 200px;
+                    object-fit: cover;
+                    object-position: top;
 
                     padding-bottom: 10px;
                 }
@@ -687,4 +689,25 @@ form {
     box-shadow: 0 0 0.6em .25em var(--glow-color),
             0 0 2.5em 2em var(--glow-spread-color),
             inset 0 0 .5em .25em var(--glow-color);
+}
+
+
+.create {
+    margin: 40px 0;
+
+
+    a {
+        padding: 18px;
+        text-decoration: none;
+        color: white;
+        background-color: #0282f9;
+        text-transform: uppercase;
+        font-weight: bold;
+
+
+        &:hover {
+            background-color: #0282f99a;
+        }
+    }
+
 }

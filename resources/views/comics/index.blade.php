@@ -10,6 +10,12 @@
     {{-- CONTAINER OFFERTO DA BOOTSTRAP --}}
     <div class="container">
 
+        <div class="create">
+
+            <a href="{{route('comics.create')}}">Add Comic</a>
+
+        </div>
+
         {{-- ROW THAT CONTAINS ALL THE CARD --}}
         <div class="row comic-card">
 
