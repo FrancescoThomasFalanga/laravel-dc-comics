@@ -23,7 +23,7 @@ CHE VADO A CLICCARE QUELLA DETERMINATA IMMAGINE (VEDI comics.blade.php) AL MIO U
           @csrf
           @method('DELETE')
 
-          <button type="submit" class="btn btn-danger delete-btn">DELETE</button>
+          <button type="submit" class="btn btn-danger delete-btn" onclick="return confirm('{{ __('Are you sure you want to delete?') }}')">DELETE</button>
         
         </form>
       </div>
