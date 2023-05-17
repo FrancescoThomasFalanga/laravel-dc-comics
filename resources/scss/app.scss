@@ -284,6 +284,15 @@ div.upperFooter {
                         
                         li {
                             font-size: 14px;
+
+                            a {
+                                text-decoration: none;
+                                color: #74787b;
+
+                                &:hover {
+                                    color: #0282f9;
+                                }
+                            }
                         }
                     }
                 }

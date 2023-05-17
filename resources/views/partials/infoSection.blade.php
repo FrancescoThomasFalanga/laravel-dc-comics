@@ -5,25 +5,85 @@
 
         <div class="row">
 
-            @foreach ($data[1] as $info)
-
             <div class="col-2">
 
                 <div class="img">
 
-                    <img src="{{ asset($info['img']) }}" alt="">
+                    <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="">
 
                 </div>
 
                 <div class="title">
 
-                    {{ $info['title'] }}
+                    digital comics
 
                 </div>
 
             </div>
 
-            @endforeach
+            <div class="col-2">
+
+                <div class="img">
+
+                    <img src="{{asset('img/buy-comics-merchandise.png')}}" alt="">
+
+                </div>
+
+                <div class="title">
+
+                    dc merchandise
+
+                </div>
+
+            </div>
+
+            <div class="col-2">
+
+                <div class="img">
+
+                    <img src="{{asset('img/buy-comics-subscriptions.png')}}" alt="">
+
+                </div>
+
+                <div class="title">
+
+                    subscription
+
+                </div>
+
+            </div>
+
+            <div class="col-2">
+
+                <div class="img">
+
+                    <img src="{{asset('img/buy-comics-shop-locator.png')}}" alt="">
+
+                </div>
+
+                <div class="title">
+
+                    comic shop locator
+
+                </div>
+
+            </div>
+
+            <div class="col-2">
+
+                <div class="img">
+
+                    <img src="{{asset('img/buy-dc-power-visa.svg')}}" alt="">
+
+                </div>
+
+                <div class="title">
+
+                    dc power visa
+
+                </div>
+
+            </div>
 
         </div>
 

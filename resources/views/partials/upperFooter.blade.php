@@ -15,12 +15,28 @@
                     <div class="single-section">
     
                         <ul>
-    
-                            @foreach ($data[2] as $item)
+
                             <li>
-                                {{ $item }}
+                                <a href="#">Character</a>
                             </li>
-                            @endforeach
+                            <li>
+                                <a href="#">Comics</a>
+                            </li>
+                            <li>
+                                <a href="#">Movies</a>
+                            </li>
+                            <li>
+                                <a href="#">TV</a>
+                            </li>
+                            <li>
+                                <a href="#">Games</a>
+                            </li>
+                            <li>
+                                <a href="#">Videos</a>
+                            </li>
+                            <li>
+                                <a href="#">News</a>
+                            </li>
     
                         </ul>
     
@@ -36,11 +52,12 @@
     
                         <ul>
     
-                            @foreach ($data[5] as $item)
                             <li>
-                                {{ $item }}
+                                <a href="#">Shop DC</a>
                             </li>
-                            @endforeach
+                            <li>
+                                <a href="#">Shop DC Collectibles</a>
+                            </li>
     
                         </ul>
     
@@ -58,11 +75,39 @@
 
                     <ul>
 
-                        @foreach ($data[3] as $item)
                         <li>
-                            {{ $item }}
+                            <a href="#">Terms Of Use</a>
                         </li>
-                        @endforeach
+                        <li>
+                            <a href="#">Privacy policy (New)</a>
+                        </li>
+                        <li>
+                            <a href="#">Ad Choises</a>
+                        </li>
+                        <li>
+                            <a href="#">Advertising</a>
+                        </li>
+                        <li>
+                            <a href="#">Jobs</a>
+                        </li>
+                        <li>
+                            <a href="#">Subscriptions</a>
+                        </li>
+                        <li>
+                            <a href="#">Talent Workshops</a>
+                        </li>
+                        <li>
+                            <a href="#">CPSC Certificates</a>
+                        </li>
+                        <li>
+                            <a href="#">Ratings</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop Help</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
 
                     </ul>
 
@@ -78,11 +123,21 @@
 
                     <ul>
 
-                        @foreach ($data[4] as $item)
                         <li>
-                            {{ $item }}
+                            <a href="#">DC</a>
                         </li>
-                        @endforeach
+                        <li>
+                            <a href="#">MAD Magazine</a>
+                        </li>
+                        <li>
+                            <a href="#">DC Kids</a>
+                        </li>
+                        <li>
+                            <a href="#">DC Universe</a>
+                        </li>
+                        <li>
+                            <a href="#">DC Power Visa</a>
+                        </li>
 
                     </ul>
 
