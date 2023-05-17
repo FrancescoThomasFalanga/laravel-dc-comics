@@ -40,6 +40,8 @@ class ComicController extends Controller
         
         $form_data = $request->all();
 
+        $form_data['price'] = '$' . number_format($form_data['price'], 2);
+
         $newComic = new Comic();
 
         // $comic->title = $$form_data['title'];

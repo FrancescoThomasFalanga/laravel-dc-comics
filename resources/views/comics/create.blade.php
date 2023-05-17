@@ -22,13 +22,13 @@
         <input name="thumb" id="thumb" type="text" class="infos">
 
         <label for="price" class="lb">Price:</label>
-        <input name="price" id="price" type="text" class="infos">
+        <input name="price" id="price" type="number" class="infos" step=".01">
 
         <label for="series" class="lb">Series:</label>
         <input name="series" id="series" type="text" class="infos">
 
         <label for="sale_date" class="lb">Sale Date:</label>
-        <input name="sale_date" id="sale_date" type="text" class="infos">
+        <input name="sale_date" id="sale_date" type="date" class="infos">
 
         <label for="type" class="lb">Type:</label>
         <input name="type" id="type" type="text" class="infos">
