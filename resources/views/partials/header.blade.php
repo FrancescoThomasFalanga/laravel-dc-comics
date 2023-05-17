@@ -50,34 +50,34 @@
             <ul>
 
                 <li>
-                    <a href="{{route('characters')}}">Characters</a>
+                    <a class="{{request()->is('characters') ? 'active' : ''}}" href="{{route('characters')}}">Characters</a>
                 </li>
                 <li>
-                    <a href="{{route('comics.index')}}">Comics</a>
+                    <a class="{{request()->is('comics') ? 'active' : ''}}" href="{{route('comics.index')}}">Comics</a>
                 </li>
                 <li>
-                    <a href="{{route('movies')}}">Movies</a>
+                    <a class="{{request()->is('movies') ? 'active' : ''}}" href="{{route('movies')}}">Movies</a>
                 </li>
                 <li>
-                    <a href="{{route('tv')}}">Tv</a>
+                    <a class="{{request()->is('tv') ? 'active' : ''}}" href="{{route('tv')}}">Tv</a>
                 </li>
                 <li>
-                    <a href="{{route('games')}}">Games</a>
+                    <a class="{{request()->is('games') ? 'active' : ''}}" href="{{route('games')}}">Games</a>
                 </li>
                 <li>
-                    <a href="{{route('collectibles')}}">Collectibles</a>
+                    <a class="{{request()->is('collectibles') ? 'active' : ''}}" href="{{route('collectibles')}}">Collectibles</a>
                 </li>
                 <li>
-                    <a href="{{route('videos')}}">Videos</a>
+                    <a class="{{request()->is('videos') ? 'active' : ''}}" href="{{route('videos')}}">Videos</a>
                 </li>
                 <li>
-                    <a href="{{route('fans')}}">Fans</a>
+                    <a class="{{request()->is('fans') ? 'active' : ''}}" href="{{route('fans')}}">Fans</a>
                 </li>
                 <li>
-                    <a href="{{route('news')}}">News</a>
+                    <a class="{{request()->is('news') ? 'active' : ''}}" href="{{route('news')}}">News</a>
                 </li>
                 <li>
-                    <a href="{{route('shop')}}">Shop</a>
+                    <a class="{{request()->is('shop') ? 'active' : ''}}" href="{{route('shop')}}">Shop</a>
                 </li>
                 {{-- /questo foreach prenderà i vari link importati grazie alla ruote --}}
             </ul>
