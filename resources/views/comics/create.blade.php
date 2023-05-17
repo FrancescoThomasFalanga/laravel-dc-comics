@@ -41,6 +41,7 @@
     
         <button id="send" type="submit">Send</button>
         <button id="limpar" type="reset">Clear </button>
+        
     </form>
 
 @endsection

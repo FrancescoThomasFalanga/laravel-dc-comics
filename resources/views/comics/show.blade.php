@@ -13,6 +13,21 @@ CHE VADO A CLICCARE QUELLA DETERMINATA IMMAGINE (VEDI comics.blade.php) AL MIO U
 
       <img src="{{ $comic->thumb }}" alt="">
 
+      <div class="edit">
+        <button class="edit-btn btn btn-primary" type="submit">
+          <a href="{{route('comics.edit', $comic->id)}}">EDIT</a>
+        </button>
+
+        <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+        
+          @csrf
+          @method('DELETE')
+
+          <button type="submit" class="btn btn-danger delete-btn">DELETE</button>
+        
+        </form>
+      </div>
+
     </div>
 
   </div>

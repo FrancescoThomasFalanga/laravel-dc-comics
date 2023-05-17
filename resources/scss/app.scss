@@ -398,6 +398,41 @@ div.bg-blue-terziary {
 
             width: 300px;
         }
+
+        .edit {
+            position: absolute;
+            left: 400px;
+            top: -50px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .edit-btn {
+                padding: 15px 0;
+    
+                a {
+                    padding: 15px 32px;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+
+            form {
+                margin: 0;
+                background-color: inherit;
+
+                .delete-btn {
+                    padding: 15px 32px;
+                    font-weight: bold;
+
+                    &:hover {
+                        background-color: #ff0019;
+                    }
+                }
+            }
+        }
+
     }
 }
 
