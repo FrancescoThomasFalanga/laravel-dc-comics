@@ -23,7 +23,37 @@ CHE VADO A CLICCARE QUELLA DETERMINATA IMMAGINE (VEDI comics.blade.php) AL MIO U
           @csrf
           @method('DELETE')
 
-          <button type="submit" class="btn btn-danger delete-btn" onclick="return confirm('{{ __('Are you sure you want to delete?') }}')">DELETE</button>
+          {{-- METODO CON UNA FUNZIONE PREIMPOSTATA DI JAVASCRIPT --}}
+
+          {{-- <button type="submit" class="btn btn-danger delete-btn">ELIMINA</button> --}}
+
+          {{-- METODO CON UNA FUNZIONE PREIMPOSTATA DI JAVASCRIPT --}}
+
+
+          
+          <!-- Button trigger modal CON L'UTILIZZO DI BOOTSTRAP-->
+          <button type="button" class="btn btn-danger delete-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            DELETE
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade text-primary" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Comic</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Are you sure you want to delete the actual Comic?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+                  <button type="submit" class="btn btn-danger">DELETE</button>
+                </div>
+              </div>
+            </div>
+          </div>
         
         </form>
       </div>
