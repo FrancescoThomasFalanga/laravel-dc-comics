@@ -25,13 +25,13 @@ CHE VADO A CLICCARE QUELLA DETERMINATA IMMAGINE (VEDI comics.blade.php) AL MIO U
 
           {{-- METODO CON UNA FUNZIONE PREIMPOSTATA DI JAVASCRIPT --}}
 
-          <button type="submit" class="btn btn-danger delete-btn" onclick="return confirm('{{ __('Are you sure you want to delete?') }}')">DELETE</button>
+          {{-- <button type="submit" class="btn btn-danger delete-btn" onclick="return confirm('{{ __('Are you sure you want to delete?') }}')">DELETE</button> --}}
 
           {{-- METODO CON UNA FUNZIONE PREIMPOSTATA DI JAVASCRIPT --}}
 
 
           
-          {{-- <!-- Button trigger modal CON L'UTILIZZO DI BOOTSTRAP-->
+          <!-- Button trigger modal CON L'UTILIZZO DI BOOTSTRAP-->
           <button type="button" class="btn btn-danger delete-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
             DELETE
           </button>
@@ -53,7 +53,7 @@ CHE VADO A CLICCARE QUELLA DETERMINATA IMMAGINE (VEDI comics.blade.php) AL MIO U
                 </div>
               </div>
             </div>
-          </div> --}}
+          </div>
         
         </form>
       </div>
