@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Comic;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class ComicController extends Controller
 {
@@ -124,17 +125,54 @@ class ComicController extends Controller
 
     private function validation($request) {
 
-        $request->validate([
+        // $request->validate([
+        //     'title' => 'required|max:80',
+        //     'description' => 'required',
+        //     'thumb' => 'required',
+        //     'price' => 'required|max:8|min:4',
+        //     'series' => 'required|max:100',
+        //     'sale_date' => 'required|date_format:d/m/Y|max:10',
+        //     'type' => 'required|max:50|min:5',
+        //     'artists' => 'required',
+        //     'writers' => 'required|',
+        // ]);
+
+
+        $form_data = $request->all();
+
+        // VALIDATION ITAS
+        $validator = Validator::make($form_data, [
             'title' => 'required|max:80',
             'description' => 'required',
             'thumb' => 'required',
-            'price' => 'required|max:8|min:2',
+            'price' => 'required|max:8|min:4',
             'series' => 'required|max:100',
             'sale_date' => 'required|date_format:d/m/Y|max:10',
             'type' => 'required|max:50|min:5',
             'artists' => 'required',
             'writers' => 'required|',
-        ]);
+        ], [
+            'title.required' => 'Il campo Title è obbligatorio',
+            'title.max' => 'Puoi inserire al massimo 80 Caratteri',
+            'description.required' => 'Il campo Description è obbligatorio',
+            'thumb.required' => 'Il campo Thumb è obbligatorio',
+            'price.required' => 'Il campo Price è obbligatorio',
+            'price.max' => 'Puoi inserire al massimo 8 Caratteri',
+            'price.min' => 'Il campo Price richiede un minimo di 4 Caratteri',
+            'series.required' => 'Il campo Series è obbligatorio',
+            'series.max' => 'Puoi inserire al massimo 100 Caratteri',
+            'sale_date.required' => 'Il campo Sale Date è obbligatorio',
+            'sale_date.date_format' => 'Il formato inserito non è corretto, il formato corretto è GG/MM/AAAA',
+            'sale_date.max' => 'Credo proprio non esista un anno del genere, non al momento, almeno',
+            'type.required' => 'Il campo Type è obbligatorio',
+            'type.max' => 'Puoi inserire al massimo 50 Caratteri',
+            'type.min' => 'Il campo Type richiede un minimo di 5 Caratteri',
+            'artists.required' => 'Il campo Artists è obbligatorio',
+            'writers.required' => 'Il campo Writers è obbligatorio',
+            
+        ])->validate();
+
+        return $validator;
 
     }
 }
