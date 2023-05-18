@@ -624,6 +624,7 @@ form {
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
+    margin-top: 30px;
 }
 
 .infos[type="text"], input[type="email"], input[type="date"], .infos[type="number"] {
@@ -632,9 +633,9 @@ form {
     font-size: 16px;
     border-radius: 5px;
     border: none;
-    margin-bottom: 20px;
-    background-color: #0282f9b4;
+    background-color: #0282f977;
     color: white;
+
 }
 
 #send {
@@ -656,6 +657,7 @@ form {
     text-shadow: 0 0 .5em var(--glow-color);
     position: relative;
     transition: all 0.3s;
+    margin-top: 30px;
 }
 
 #send::after {
