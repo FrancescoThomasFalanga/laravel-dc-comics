@@ -9,7 +9,7 @@
 
                 <div class="img">
 
-                    <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="">
+                    <img src="{{Vite::asset('resources/img/buy-comics-digital-comics.png')}}" alt="">
 
                 </div>
 
@@ -25,7 +25,7 @@
 
                 <div class="img">
 
-                    <img src="{{asset('img/buy-comics-merchandise.png')}}" alt="">
+                    <img src="{{Vite::asset('resources/img/buy-comics-merchandise.png')}}" alt="">
 
                 </div>
 
@@ -41,7 +41,7 @@
 
                 <div class="img">
 
-                    <img src="{{asset('img/buy-comics-subscriptions.png')}}" alt="">
+                    <img src="{{Vite::asset('resources/img/buy-comics-subscriptions.png')}}" alt="">
 
                 </div>
 
@@ -57,7 +57,7 @@
 
                 <div class="img">
 
-                    <img src="{{asset('img/buy-comics-shop-locator.png')}}" alt="">
+                    <img src="{{Vite::asset('resources/img/buy-comics-shop-locator.png')}}" alt="">
 
                 </div>
 
@@ -73,7 +73,7 @@
 
                 <div class="img">
 
-                    <img src="{{asset('img/buy-dc-power-visa.svg')}}" alt="">
+                    <img src="{{Vite::asset('resources/img/buy-dc-power-visa.svg')}}" alt="">
 
                 </div>
 

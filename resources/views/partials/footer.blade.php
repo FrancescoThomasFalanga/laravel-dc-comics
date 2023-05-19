@@ -29,23 +29,23 @@
             <div class="social-icon">
 
                 <a href="">
-                    <img src="img/footer-facebook.png" alt="">
+                    <img src="{{Vite::asset('resources/img/footer-facebook.png')}}" alt="">
                 </a>
 
                 <a href="">
-                    <img src="img/footer-twitter.png" alt="">
+                    <img src="{{Vite::asset('resources/img/footer-twitter.png')}}" alt="">
                 </a>
 
                 <a href="">
-                    <img src="img/footer-youtube.png" alt="">
+                    <img src="{{Vite::asset('resources/img/footer-youtube.png')}}" alt="">
                 </a>
 
                 <a href="">
-                    <img src="img/footer-pinterest.png" alt="">
+                    <img src="{{Vite::asset('resources/img/footer-pinterest.png')}}" alt="">
                 </a>
                 
                 <a href="">
-                    <img src="img/footer-periscope.png" alt="">
+                    <img src="{{Vite::asset('resources/img/footer-periscope.png')}}" alt="">
                 </a>
 
             </div>

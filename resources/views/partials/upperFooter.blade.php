@@ -150,7 +150,7 @@
 
         <div class="dc-image">
 
-            <img src="img/dc-logo-bg.png" alt="">
+            <img src="{{Vite::asset('resources/img/dc-logo-bg.png')}}" alt="">
 
         </div>
 

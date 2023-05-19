@@ -36,7 +36,7 @@
             {{-- cliccando il logo ti porterà alla homepage --}}
             <a href="{{ route('homepage') }}">
 
-                <img src="{{ asset('img/dc-logo.png') }}" alt="">
+                <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="">
 
             </a>
 

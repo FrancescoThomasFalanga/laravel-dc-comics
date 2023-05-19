@@ -10,7 +10,7 @@ sarò io a decidere cosa andare a stampare a seconda della pagina visualizzata -
 
     <title>DC</title>
 
-    <link rel="Shortcut Icon" type="image/png" href="{{asset('img/favicon.ico')}}">
+    <link rel="Shortcut Icon" type="image/png" href="{{Vite::asset('resources/img/favicon.ico')}}">
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
