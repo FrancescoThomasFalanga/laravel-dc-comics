@@ -22,8 +22,7 @@
         @enderror
     
         <label for="description" class="lb">Description:</label>
-        <input name="description" id="description" type="text" class="infos form-control @error('description') is-invalid @enderror" value="{{old('description') ?? $comic->description}}">
-        @error('description')
+        <textarea name="description" id=description" cols="30" rows="3" class="infos form-control @error('description') is-invalid @enderror" style="background-color: #0282f977; border: none; color: white">{{old('description') ?? $comic->description}}</textarea>        @error('description')
         <div class="invalid-feedback mb-3 mt-0">
             {{$message}}
         </div>
@@ -38,7 +37,7 @@
         @enderror
 
         <label for="price" class="lb">Price:</label>
-        <input name="price" id="price" type="number" class="infos form-control @error('price') is-invalid @enderror" step=".01" value="{{old('price') ?? $comic->price}}">
+        <input name="price" id="price" type="text" class="infos form-control @error('price') is-invalid @enderror" step=".01" value="{{old('price') ?? $comic->price}}">
         @error('price')
         <div class="invalid-feedback mb-3 mt-0">
             {{$message}}

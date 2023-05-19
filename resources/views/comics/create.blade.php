@@ -29,15 +29,14 @@
         @enderror
     
         <label for="thumb" class="lb">Thumb:</label>
-        <input name="thumb" id="thumb" type="text" class="infos form-control @error('thumb') is-invalid @enderror" value="{{old('thumb')}}">
-        @error('thumb')
+        <textarea name="description" id=description" cols="30" rows="3" class="infos form-control @error('description') is-invalid @enderror" style="background-color: #0282f977; border: none; color: white">{{old('description')}}</textarea>        @error('thumb')
         <div class="invalid-feedback mb-3 mt-0">
             {{$message}}
         </div>
         @enderror
 
         <label for="price" class="lb">Price:</label>
-        <input name="price" id="price" type="number" class="infos form-control @error('price') is-invalid @enderror" step=".01" value="{{old('price')}}">
+        <input name="price" id="price" type="text" class="infos form-control @error('price') is-invalid @enderror" step=".01" value="{{old('price')}}">
         @error('price')
         <div class="invalid-feedback mb-3 mt-0">
             {{$message}}
